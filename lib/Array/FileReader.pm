@@ -11,7 +11,7 @@ use Carp;
 
 @ISA = qw(Tie::Array DynaLoader);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 # bootstrap Array::FileReader $VERSION;
 
@@ -20,9 +20,9 @@ sub TIEARRAY {
   my $fh = new IO::File;
   $fh->open($file) or croak "Can't open $file: $!";
   my $self = {
-	      fh => $fh,
-	      offsets => [0]
-	     };
+          fh => $fh,
+          offsets => [0]
+         };
   bless $self, $class;
 }
 
@@ -103,6 +103,12 @@ L<Algorithm::Diff|Algorithm::Diff> module when finding differences
 between two very large files. In fact, it makes things less efficient,
 since the first thing that module does is find the size of the arrays.
 It just goes to show, doesn't it?
+
+=head1 MAINTAINER
+
+Curtis "Ovid" Poe, E<lt>1napc-pmetsuilbup@yahoo.comE<gt>
+
+Reverse the name to email me.
 
 =head1 AUTHOR
 

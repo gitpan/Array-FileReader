@@ -1,5 +1,6 @@
 Changes
-FileReader.pm
+lib/Array/FileReader.pm
 MANIFEST
 Makefile.PL
-test.pl
+t/10filereader.t
+META.yml                                 Module meta-data (added by MakeMaker)
