@@ -11,7 +11,7 @@ use Carp;
 
 @ISA = qw(Tie::Array DynaLoader);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 # bootstrap Array::FileReader $VERSION;
 
